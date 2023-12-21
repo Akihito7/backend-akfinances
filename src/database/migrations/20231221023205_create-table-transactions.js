@@ -1,6 +1,7 @@
 exports.up = knex => knex.schema.createTable("transactions", table => {
     table.increments("id"),
     table.text("name").notNullable();
+    table.text("value").notNullable();
     table.text("category").notNullable();
     table.text("type").notNullable();
     table.text("date").notNullable();

@@ -29,7 +29,7 @@ class AuthController {
         });
 
         response.status(200).json();
-    }
+    };
 };
 
 module.exports = AuthController;
