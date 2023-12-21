@@ -5,7 +5,7 @@ const controller = new AuthController();
 
 const authRoutes = Router();
 
-authRoutes.get("/signln", controller.Signln);
-authRoutes.get("/signup", controller.Signup);
+authRoutes.post("/signln", controller.signln);
+authRoutes.post("/signup", controller.signup);
 
 module.exports = authRoutes;
