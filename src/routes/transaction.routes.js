@@ -5,8 +5,8 @@ const TransactionController = require("../controllers/TransactionController");
 const controller = new TransactionController();
 const transactionRoutes = Router();
 
-transactionRoutes.get("/", controller.getAllTransactions)
-transactionRoutes.get("/:id", controller.getUniqueTransaction);
+transactionRoutes.get("/:user_id", controller.getAllTransactions)
+transactionRoutes.get("/unique/:transaction_id", controller.getUniqueTransaction);
 transactionRoutes.post("/", controller.saveTransaction);
 transactionRoutes.put("/", controller.updateTransaction);
 transactionRoutes.delete("/:id", controller.deleteTransaction);

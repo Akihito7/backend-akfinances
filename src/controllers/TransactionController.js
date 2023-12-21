@@ -3,11 +3,26 @@ const knex = require("../database");
 class TransactionController {
 
     async getUniqueTransaction(request, response) {
-        response.status(200).json("Get Unique Transaction")
-    }
+        const { transaction_id } = request.params;
+
+        const transaction = await knex("transactions")
+            .where({
+                id: transaction_id
+            })
+            .first();
+
+        response.status(200).json(transaction)
+    };
 
     async getAllTransactions(request, response) {
-        response.status(200).json("Get All Transactions")
+        const { user_id } = request.params;
+
+        const transactions = await knex("transactions").where({
+            user_id
+        });
+
+        console.log(transactions)
+        response.status(200).json(transactions)
     }
 
     async saveTransaction(request, response) {
@@ -37,7 +52,6 @@ class TransactionController {
     }
 
     async deleteTransaction(request, response) {
-
         const { id } = request.params;
         await knex("transactions").del().where({ id });
         response.status(200).json()
