@@ -28,7 +28,7 @@ class TransactionController {
             date,
             user_id
         });
-        
+
         response.status(200).json();
     };
 
@@ -37,7 +37,10 @@ class TransactionController {
     }
 
     async deleteTransaction(request, response) {
-        response.status(200).json("Delete Transaction")
+
+        const { id } = request.params;
+        await knex("transactions").del().where({ id });
+        response.status(200).json()
     }
 }
 
