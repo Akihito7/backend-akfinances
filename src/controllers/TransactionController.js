@@ -21,7 +21,6 @@ class TransactionController {
             user_id
         });
 
-        console.log(transactions)
         response.status(200).json(transactions)
     }
 
@@ -55,7 +54,7 @@ class TransactionController {
         const { id } = request.params;
         await knex("transactions").del().where({ id });
         response.status(200).json()
-    }
+    };
 }
 
 module.exports = TransactionController;
