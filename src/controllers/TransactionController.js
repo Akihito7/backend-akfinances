@@ -24,6 +24,19 @@ class TransactionController {
         response.status(200).json(transactions)
     }
 
+    async getTransactionByMonth(request, response) {
+        const { date } = request.params;
+
+        const [year, month] = String(date).split("-");
+        const dateFormatted = `${month}/${year}`
+        
+        const transaction = await knex("transactions")
+        .where('date', 'like', `%${dateFormatted}%`);
+
+        response.status(200).json(transaction);
+    }
+
+
     async saveTransaction(request, response) {
         const {
             name,
