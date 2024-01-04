@@ -4,6 +4,7 @@ const { hash, compare } = require("bcrypt");
 const { tokenProvider } = require("../providers/TokenProvider");
 
 class AuthController {
+
     async signln(request, response) {
 
         const { email, password } = request.body;
@@ -21,6 +22,8 @@ class AuthController {
         });
 
         const token = tokenProvider(user.id);
+
+        console.log("chegui aqui");
 
         response.status(200).json({
             user,
