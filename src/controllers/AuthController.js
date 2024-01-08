@@ -14,16 +14,14 @@ class AuthController {
         if (!user) return response.status("404").json({
             message: "Usúario e/ou senha incorretos!"
         });
-
-        const passwordMatch = compare(password, user.password);
+    
+        const passwordMatch = await compare(password, user.password);
 
         if (!passwordMatch) return response.status("403").json({
             message: "Usúario e/ou senha incorretos!"
         });
 
         const token = tokenProvider(user.id);
-
-        console.log("chegui aqui");
 
         response.status(200).json({
             user,

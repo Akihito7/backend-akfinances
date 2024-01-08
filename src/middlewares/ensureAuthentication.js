@@ -5,12 +5,10 @@ const appError = require("../utils/appError");
 
 async function ensureAuthentication(req, res, next) {
     
-    console.log("PASSANDO PELO ENSUERE AUTHENTICATION");
     const authHeader = req.headers.authorization;
-    console.log(authHeader)
 
     if (!authHeader) {
-        return res.json()
+        throw new appError(403, "Token não informado");
     };
 
     const [, token] = authHeader.split(" ");
@@ -26,7 +24,7 @@ async function ensureAuthentication(req, res, next) {
         return next();
 
     } catch {
-        res.json()
+        throw new appError(500, "INTERNAL ERROR SERVER")
     }
 };
 
