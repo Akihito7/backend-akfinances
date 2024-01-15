@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "akfinances",
+    "private_key_id": "e8f3d5d943f974be982ed29eb0136d7000504651",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC1YcUSl0tvyGQ1\nDnG2/lKoyLQ6Jx36/rrS7wEymXxl2TPYNGFSn8sxMI3JtQTvKWV7NgyEVosmnL2b\nG5klwL8BOdNJQVe7W2KgLS/X/TsG9PBjUfDnpnAJoThLrWPyTu4BekImnqnKcaHJ\nOt2vdcAkTFJLIA0s2TxDodw5fY945N01YLBcbOsp5P+Lz8BBp9hLbYGSwikES/72\ngaGMD9DtMyQ+LIbuhyq+LP4D0aE0BgEI0NNsQ7SzH7Ef8Wjyx4RAiCUtOmudJ8dK\nZSHyav+GL23wHjlImGoWzTg1PcRm0GjTkAhjSlqA2jSbu5hAGSP0QhSSJrHGEe53\n509kEP8vAgMBAAECggEATF8K1h2bF0mWm9plmgnyrvu3Gyc+UeEws8ELzYzf2ph+\nYmIHunzq1t7dTJlqJvNUtfDXi19PPuZPVYBk1wcVxYPeCWG4eXxshgoQs4597Jt0\nnjUxzLABS6S06fRreWqvfzLFqLI0xrdayjp9fjQDv6TdH6GyungLjmSYMCLEpr9s\nzcTIZGwlLywA+UjvqSVbcCOqOU7wlZkzL2EUrEOapHyaDUuew16crm/hFNHih0vP\nvzkCYRp62J+0+h8Fcc/7xS3lQfEyX4PgZjvqM0tZI2+2GSfMNdaISlyev5Sg0BJY\nKBdL0knGCbHLXnDzLukqdfkPhc5L18agxUt1FzcoeQKBgQDntMzweXjS1FCG86Bx\nbaMzibJ6kbHkpRhpMnP+/2GLhz5nxredranqsLh7mP8iFxtff8D5sjwSrpHVDN9L\njjhcjaTpCx6JVZCospX+V7SsZJDF3rgLnARS5sVxAj87rel7m7WJSIvYvophCEmU\nJ/q97CQHAWWlURP+EBDw++09SQKBgQDIZjhD9tt+28OIc4Dn+JMnmRJ+gkB3wzwr\nH6F7EmGfppjrVgd/89Y0JRHXbCnCZ019Ei09YHWrnAXNxUgHWgjtTncFffHH7175\ngG6qfQixbUk8fGwImLRWQ6z7JSPQxsngqE2SZBkjNxvcDZrPtjQtkb6ffOltJLdt\nXaAtUJiwtwKBgQDSpS/bPtN098ftp/aop//CjuBPRbzwHJdAq7mAjTNk4aL+PU4Y\nbxUWY2qUEtd/anpcK4yIdFzgrwutIHKwAa+DlNHje1RbjgphE1oBTELYpuRmvr+a\n7k+P/nRo9J3/529oDHrRP77DYRX0eNBLfL0bhF6Mb9y0mi0OwBRmwOFA4QKBgQCx\nuP3DQIUOr0VsmMrEbs3Ke1VMfqU/0RRmRioGpJmRZcUOSIBkOFJKcmmtO86ZCtZM\nyjb2zLnulHMNNx2W74ElO8YQR86J+r6m1QDQEA0KlRozG0EQKqUcL+6T2C84M2PL\n6lbJMh6c/X2mnSYjeboyg6Oje7rkQYCu7C5moaiYZwKBgQCytWC51cGV5uzLrGPo\nSA+G4qnE4P2CV5wcI0ZkNP3FacrJmgyqbc7tx22RVxprW3q9nM8XhtPpijl3YO9I\nL1Oa1gu+2ChKrlicYX+lHubyVWLbqYY+FE49AmIMEngw382pCqZMF1FV7580d9//\nz/PQBBcxrsHxyIZqzRdLY0ZkZQ==\n-----END PRIVATE KEY-----\n",
+    "client_email": "google-akfinances@akfinances.iam.gserviceaccount.com",
+    "client_id": "114480030319199576013",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/google-akfinances%40akfinances.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+  
