@@ -1,15 +1,20 @@
+require('dotenv').config();
+
 const path = require("path");
 
 module.exports = {
   development: {
-    client: "sqlite3",
+    client: 'pg',
     connection: {
-      filename: path.resolve(__dirname, "src", "database", "database.db")
+      host: process.env.DB_HOST,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_NAME,
+      ssl: { rejectUnauthorized: false },
     },
     migrations: {
-      directory: path.resolve(__dirname, "src", "database", "migrations")
+      tableName: 'knex_migrations',
+      directory: path.resolve(__dirname, "src", "database", "migrations"),
     },
-    
-    useNullAsDefault: true
-  }
+  },
 };
