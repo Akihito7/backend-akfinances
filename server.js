@@ -11,6 +11,11 @@ const PORT = 7777;
 
 app.use(routes);
 
+app.get("/", (req, res) => {
+    res.send("Hello, world!");
+  });
+
+
 app.use((error, request, response, next) => {
     if(error instanceof appError){
         return response.status(error.statusCode).json({
