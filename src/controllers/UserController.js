@@ -2,14 +2,6 @@ const uploadToDrive = require("../configs/uploadGoogleDrive");
 const knex = require("../database");
 
 class UserController {
-    async UpdateUser(request, response){
-        response.status(200).json("Update User");
-    }
-
-    async DeleteUser(request, response){
-        response.status(200).json("Delete User");
-    }
-
     async updateAvatar(req, res) {
 
         const { id } = req.user;
@@ -30,7 +22,6 @@ class UserController {
         res.status(200).json();
 
     }
-
 };
     
 module.exports = UserController;
